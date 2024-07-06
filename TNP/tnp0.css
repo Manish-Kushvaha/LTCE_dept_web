@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, #7cf897, #a8f8a0, #c8f8ae, #e0f8c1, #f1f9d8, #f4efcb, #f8e4c2, #fbd9bb, #ffb5a2, #ff8ea9, #f170cc, #9f6ffb);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+/* HEADER COMMON TO ALL  */
+.header-t {
+  border: 2px solid black;
+  background-color: rgb(128, 176, 124);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* FOR RESPONSIVE IMAGE  */
+img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+
+/* /NAVBAR CONTENT */
+
+.topnav {
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgb(34, 160, 9);
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+@media screen and (min-width: 1071px) {
+  .topnav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}
+
+.topnav a {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  /* font-weight: 900; */
+  /* margin-left: 2vw; */
+}
+
+.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  /* font-weight: 900; */
+  padding: 6px 16px;
+  background-color: inherit;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9fcf2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  padding: 12px 16px;
+  font-size: medium;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+  text-decoration: underline;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+.icon:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.topnav a {
+  position: sticky;
+  top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+/* FOR RESPONSIVE IMAGE  */
+img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+
+embed {
+  /* width: 50%; */
+  width: 50vw;
+  height: 600px;
+  margin: 0 25vw;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.data:first-child {
+  margin-top: 30px;
+}
+
+span {
+  display: block;
+  font-size: larger;
+  text-align: center;
+
+}
+
+/* BELOW NAVBAR */
+
+.header-l {
+  height: 40px;
+  width: 55%;
+  border: 2px solid rgb(3, 116, 22);
+  background-color: rgb(140, 246, 130);
+  font-weight: 900;
+  font-size: larger;
+  margin-left: 25%;
+  margin-left: 25%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+  .data {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  embed {
+    width: 50vw;
+    width: fit-content;
+
+    margin: 0 25vw;
+    height: 400px;
+  }
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(to right,
+      rgba(46, 139, 87, 0.3) 0%,
+      #7FFFD4 25%,
+      #FFFF99 50%,
+      #FFFF99 50%);
+  /* background-color: rgb(37, 37, 37); */
+  /* background-image: url(images/achiveback.jpg); */
+  /* opacity: 0.34; */
+  width: 40vw;
+  border-radius: 5px;
+  border: 2px solid rgb(67, 104, 160);
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+.head h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 30vw;
+  size: 100px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 69;
+  color: rgb(0, 0, 7);
+}
+
+@media only screen and (max-width: 775px) {
+  .heading {
+    width: 90vw;
+  }
+
+  .head h1 {
+    width: 80vw;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex-basis: calc(50% - 20px);
+  margin: 0 10px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li i {
+  margin-right: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.team {
+  display: flex;
+  gap: 5vw;
+  justify-content: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    flex-basis: 100%;
+  }
+}

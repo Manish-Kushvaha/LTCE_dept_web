@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>LTCE - Lokmany Tilak College Of Engineering</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* HEADER COMMON TO ALL  */
+    .header-t {
+      border: 2px solid black;
+      background-color: rgb(128, 176, 124);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    /* FOR RESPONSIVE IMAGE  */
+    img {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* /NAVBAR CONTENT */
+
+    .topnav {
+      box-sizing: border-box;
+      overflow: hidden;
+      background-color: rgb(34, 160, 9);
+      border-bottom: 2px solid black;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+    @media screen and (min-width: 1071px) {
+      .topnav {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+    }
+
+    .topnav a {
+      box-sizing: border-box;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      /* font-weight: 900; */
+      /* margin-left: 2vw; */
+    }
+
+    .active {
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 20px;
+      border: none;
+      outline: none;
+      color: white;
+      /* font-weight: 900; */
+      padding: 6px 16px;
+      background-color: inherit;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      margin: 0;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9fcf2;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      box-sizing: border-box;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 400;
+      /* color: #f2f2f2; */
+      padding: 12px 16px;
+      font-size: medium;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      /* margin-left: 1vw; */
+
+    }
+
+    .topnav a:hover,
+    .dropdown:hover .dropbtn {
+      /* background: #1B5E20; */
+      background-color: #4CAF50;
+      text-decoration: underline;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    .icon:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .topnav a {
+      position: sticky;
+      top: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
+      }
+
+      .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    p {
+      line-height: 1.5;
+      text-align: justify;
+      font-size: 20px;
+      color: black;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    h1 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    hr {
+      border: none;
+
+      height: 2px;
+
+      background-color: black;
+
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .tnp1 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0 15vw;
+      background-attachment: fixed;
+      visibility: inherit;
+    }
+
+    #tnpb img {
+      border: 2px solid rgb(8, 8, 8);
+      border-radius: 10px;
+      box-shadow: 30px rgba(0, 0, 0, 0.5);
+    }
+
+    #tnpb {
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: block;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    body {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to left, #7cf897, #a8f8a0, #c8f8ae, #e0f8c1, #f1f9d8, #f4efcb, #f8e4c2, #fbd9bb, #ffb5a2, #ff8ea9, #f170cc, #9f6ffb);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      z-index: -1;
+    }
+
+    #header {
+      display: flex;
+      justify-content: center;
+      margin-top: 2vh;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: center;
+      height: 90px;
+      align-items: center;
+      background: linear-gradient(to right,
+          rgba(46, 139, 87, 0.3) 0%,
+          #7FFFD4 25%,
+          #FFFF99 50%,
+          #FFFF99 50%);
+      /* background-image: url(images/achiveback.jpg); */
+      /* opacity: 0.34; */
+      /* background-color: rgb(37, 37, 37); */
+      width: 50vw;
+      border-radius: 5px;
+      border: 2px solid rgb(67, 104, 160);
+    }
+
+    .head h1 {
+
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+      font-size: 1vw;
+      padding: 10px 10px;
+      border-radius: 4px;
+      /* font-weight: bolder; */
+      /* position: relative; */
+      z-index: 69;
+      color: rgb(13, 13, 230);
+      align-items: center;
+      font-size: 2VW;
+    }
+
+    .head {
+      width: 40vw;
+      text-align: center;
+    }
+
+    @media screen and (max-width:768px) {
+      .heading {
+        width: 70vw;
+      }
+
+      .head h1 {
+        font-size: 5vw;
+        color: #2f05e7;
+        font-weight: bolder;
+      }
+
+      .head {
+        width: 100vw;
+      }
+    }
+
+    /* FOOTER */
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .footer-section {
+      flex-basis: calc(50% - 20px);
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 5px;
+    }
+
+    .footer-section ul li i {
+      margin-right: 5px;
+    }
+
+    .footer-section ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .team {
+      display: flex;
+      gap: 5vw;
+      justify-content: center;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid #fff;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .footer-section {
+        flex-basis: 100%;
+      }
+    }
+  </style>
+
+  <!-- INTERNAL CSS END -->
+
+</head>
+
+<body>
+
+  <!-- HEADER COMMON TO ALL  -->
+  <header>
+    <div class="header-t">
+      <table style="display: block;">
+        <img src="/images/ltback3.jpeg" alt="">
+      </table>
+    </div>
+  </header>
+  <div class="topnav" id="myTopnav">
+    <a href="/index.html">HOME</a>
+    <div class="dropdown">
+
+      <button class="dropbtn">ABOUT
+
+        <i class="fa fa-caret-down"></i>
+
+      </button>
+
+      <div class="dropdown-content">
+
+        <a href="/About/about.html">ABOUT DEPARTMENT</a>
+
+        <a href="/About/lab.html">LAB DETAILS</a>
+
+      </div>
+    </div>
+    <a class="d" href="/ACHIEVEMENT.html">ACHIEVEMENTS</a>
+    <a href="/club.html">CLUB INFO</a>
+    <a href="/news.html">NEWS</a>
+    <a href="/sports.html">SPORTS-EVENT</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">FACULTY
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/staff.html">TEACHING</a>
+        <a href="/staffN.html">NON-TEACHING</a>
+      </div>
+    </div>
+    <a href="/photogallery.html">GALLERY</a>
+    <div class="dropdown">
+      <button class="dropbtn">TNP
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/TNP/tnp0.html">INTRODUCTON</a>
+        <a href="/TNP/tnp1.html">T&P CELL</a>
+        <a href="/TNP/tnp2.html">PLACEMENT INFO</a>
+      </div>
+    </div>
+    <!-- <a href="/TNP/tnp.html">TNP</a> -->
+    <!-- <a href="https://saf.ltjss.net/">STUDENT-LOGIN</a> -->
+
+    <a href="https://erp.ltjss.net/">ERP</a>
+
+    <a style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+  <header>
+    <div id="header">
+      <div class="heading">
+        <div class="head">
+          <h1>TRAINING AND PLACEMENT CELL</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="tnp">
+    <div id="tnpb"></div>
+    <div class="tnp1">
+      <h1>Introduction</h1>
+      <hr>
+      <p>
+        <strong>The Training and placement Cell </strong>
+
+        of LTCoE relentlessly works towards positioning and collaborating with potential recruiters, large
+        organizations and companies and organizes numerous on and off campus drives each year. In order to
+        ensure maximum placements, the T & P Cell has given new thrust to revamp its strategies and mode of
+        operation. Sincere efforts are made towards preparing the students to be able to successfully
+        overcome the challenges involved in the recruitment process.
+      </p>
+      <p>Several training programs are organized in order to enhance the employability of the students in the
+        areas of
+        aptitude, soft skills, technical and communication skills. The T & P Cell regularly organizes several
+        activities such as Mock Aptitude test , Mock Group Discussion(GD), Personal Interview(PI), Soft skill
+        Workshops and Motivational Seminars for the Employability Enhancement of the students.
+
+      </p>
+      <p>The Training and Placement Cell of the college adopts a dynamic approach with an objective to achieve an
+        all-round and multifaceted personality development for its students. With firm belief in the approach,
+        students are encouraged to develop their personal, interpersonal, professional skills and behaviours.
+      </p>
+      <p>The T & P cell puts in hard efforts in providing the necessary guidance and orientation to the students
+        from
+        an early stage and ensures they remain focused towards transforming themselves into a thorough
+        professional
+        in all aspects. Regular initiatives are undertaken in arranging the best of the training programs for
+        the
+        students which not only helps them in learning but also keeps them abreast about the latest trends in
+        the
+        industry. The institute has very active industrial links tied-up with prestigious companies to make our
+        students enter in the real global world. Industrial Experts are regularly invited for the Technical
+        lectures
+        and workshops in order to help the students for developing their overall professional abilities. T&P
+        cell
+        also provides opportunity of summer internships and industrial projects to all the interested students.
+      </p>
+      <p>Career counselling unit of T&P Cell helps students in getting necessary information to prepare for
+        different
+        careers after BE in India and abroad. Our main recruiters in the recent years are Amazon Web Services ,
+        IBM
+        , Cognizant , Accenture ,TCS, Wipro, Infosys, L & T Infotech, Reliance Jio, Capgemini , Tata
+        Communications
+        , Hexaware, Tech Mahindra ,HCL ,Syntel, Zeus Learnings ,Godrej, Burns & MCDonnell, Toyo Engineering
+        ,Torrent
+        Power, Sanmar Group , Schneider Electric , Ericsson, Toshiba , Walplast , QualityKiosk Technologies,
+        GEP,
+        Sterling and Wilson ,Bitwise, Quinnox, Bluestar, Byjus, Jaro, Exramarks and many more.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Designed and Developed by</h3>
+        <div class="team">
+          <ul>
+            <li><i class="fas fa-user"></i> Abhishek M Revankar</li>
+            <li><i class="fas fa-user"></i> Vaibhav Pratap Mishra</li>
+          </ul>
+          <ul>
+            <li><i class="fas fa-user"></i> MD Aman Ahmad</li>
+            <li><i class="fas fa-user"></i> Manish Kushvaha</li>
+          </ul>
+        </div>
+      </div>
+      <div style="display: flex;justify-content:center;align-items:center;flex-direction:column;"
+        class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p style="color: white;">Email: principal.ltce@gmail.com</p>
+        <p style="color: white;">Phone: +91-022-27541005, +91-022-27541006</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <a style="text-decoration: none;color: white;" href="https://ltce.in/"> &copy; copyright©2024LTCE|All Rights
+        Reserved </a>
+    </div>
+  </footer>
+</body>
+<script src="/backend.js"></script>
+
+</html>
