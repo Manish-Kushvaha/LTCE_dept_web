@@ -95,6 +95,9 @@ img {
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
+    /* I will chnage it later*/
+    /* position:fixed;
+    top:170px; */
 }
 
 @media screen and (min-width: 1071px) {
@@ -130,6 +133,7 @@ img {
 .dropdown {
     float: left;
     overflow: hidden;
+    z-index: 1;
 }
 
 .dropdown .dropbtn {
@@ -215,6 +219,11 @@ img {
     top: 0;
 }
 
+.topnav{
+    position:sticky;
+    z-index: 1;
+    top:0;
+}
 @media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
@@ -881,7 +890,7 @@ iframe {
 /* NEW FOOTER */
 .footer {
     background-color: #333;
-    background-color: #D4890E;
+    /* background-color: #D4890E; */
     color: #fff;
     padding: 20px 0;
 }

@@ -156,6 +156,11 @@ img {
     top: 0;
     cursor: pointer;
   }
+  .topnav{
+    position:sticky;
+    z-index: 1;
+    top:0;
+}
 
   .topnav.responsive a {
     float: none;

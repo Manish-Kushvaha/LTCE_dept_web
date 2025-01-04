@@ -52,6 +52,12 @@ img {
   border-right: 2px solid black;
 }
 
+.topnav{
+  position:sticky;
+  z-index: 1;
+  top:0;
+}
+
 @media screen and (min-width: 1071px) {
   .topnav {
     display: flex;
