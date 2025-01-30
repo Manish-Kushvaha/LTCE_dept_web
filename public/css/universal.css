@@ -1,0 +1,184 @@
+/* UPPPER NAVBAR */
+.upnav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 6px;
+    background-color: #ecfce7;
+}
+
+.upnav a:hover {
+    background-color: #cbebc2;
+}
+
+@media screen and (min-width:700px) and (min-height:1000px) {
+    #pro {
+        margin-top: 0.5vh;
+    }
+
+    .upnav {
+        height: 3vh;
+    }
+}
+
+.social .fa-brands {
+    height: 2vh;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#pro {
+    display: flex;
+}
+
+.social ul li {
+    padding: 0 6px;
+}
+
+.social ul {
+    display: flex;
+}
+
+/* HEADER COMMON TO ALL  */
+
+.header-t {
+    border: 2px solid black;
+    background-color: rgb(128, 176, 124);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* FOR RESPONSIVE IMAGE  */
+img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+}
+
+/* /NAVBAR CONTENT */
+
+ .mylist{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mylist{
+    /* background-color: rgb(34, 160, 9); */
+}
+
+.hide{
+visibility: hidden;
+}
+
+.navbar{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+}
+
+.nav-item{
+    font-size: larger;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav-item2{
+    
+    font-size: large;
+    font-weight: 400;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav{
+    border-radius: 0.5rem;
+}
+
+@media (max-width:62rem){
+    .hide{
+    visibility:visible;
+    }
+    .hide2{
+        display: none;
+    }
+    .mylist{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+}
+
+
+/* NEW FOOTER */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex-basis: calc(50% - 20px);
+    margin: 0 10px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li i {
+    margin-right: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.team {
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+}

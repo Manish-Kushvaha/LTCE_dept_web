@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #7cf897, #a8f8a0, #c8f8ae, #e0f8c1, #f1f9d8, #eff9dd, #edf9e2, #edf8e7, #d7f6e0, #baf5e1, #97f3ea, #6feffb);
+}
+
+.tit {
+  color: rgb(241, 7, 7);
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: "Bungee-spice";
+  font-size: 30px;
+}
+
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(to right,
+      rgba(46, 139, 87, 0.3) 0%,
+      #7FFFD4 25%,
+      #FFFF99 50%,
+      #FFFF99 50%);
+   width: 40vw;
+  border-radius: 5px;
+  border: 2px solid rgb(67, 104, 160);
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.head h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 30vw;
+  size: 100px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 69;
+  color: rgb(0, 0, 7);
+}
+
+@media only screen and (max-width: 775px) {
+  .heading {
+    width: 90vw;
+  }
+
+  .head h1 {
+    width: 80vw;
+  }
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.hod-message {
+  display: flex;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.hod-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+th,
+td {
+  border: 2px solid #0c0c0c;
+  padding: 8px;
+  text-align: left;
+
+}
+
+th {
+  background-color: #70fc1f;
+}
+
+/* Responsive CSS for Lab Details section */
+
+#labs {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+
+  th,
+  td {
+    padding: 6px;
+    text-align: center;
+  }
+}

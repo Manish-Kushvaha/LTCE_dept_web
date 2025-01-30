@@ -1,0 +1,33 @@
+/* CSS FOR PHOTOGALLERY */
+#heading{
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: fantasy;
+}
+body{
+    background-image: linear-gradient(to left, #7cf897, #a8f8a0, #c8f8ae, #e0f8c1, #f1f9d8, #f4efcb, #f8e4c2, #fbd9bb, #ffb5a2, #ff8ea9, #f170cc, #9f6ffb);
+}
+.gallery{
+    padding: 20px 20px;
+    list-style: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(200px,1fr));
+    gap: 20px;
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    height: 270px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#heading{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgba(253, 250, 215, 1) 0%, rgba(119, 82, 254, 0.5) 100%);
+}
+
+/* TITLE  */
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+  background: linear-gradient(to right,
+      rgba(46, 139, 87, 0.3) 0%,
+      #7FFFD4 25%,
+      #FFFF99 50%,
+      #FFFF99 50%);
+  width: 40vw;
+  border-radius: 5px;
+  border: 2px solid rgb(67, 104, 160);
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.head h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 30vw;
+  size: 100px;
+  font-weight: bolder;
+  padding: 10px 10px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 69;
+  color: rgb(0, 0, 7);
+}
+
+@media only screen and (max-width: 775px) {
+  .heading {
+    width: 90vw;
+  }
+
+  .head h1 {
+    width: 80vw;
+  }
+}
+
+/* Style for club cards */
+
+h1 {
+  color: #6d1904d0;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+
+}
+
+.club-card {
+  background-image: linear-gradient(to right, #7cf897, #a8f8a0, #c8f8ae, #e0f8c1, #f1f9d8, #eff9dd, #edf9e2, #edf8e7, #d7f6e0, #baf5e1, #97f3ea, #6feffb);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+
+
+.club-card h2 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.club-card p {
+  color: #0c0c0c;
+  line-height: 1.6;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* Style for club photos */
+.club-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+
+.club-photos img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+th,
+td {
+  border: 1px solid #0e0d0d;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #0e368d;
+  text-shadow: #e0f8c1;
+  color: white;
+}
+
+@media screen and (min-width: 1071px) {
+  .tablediv {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+  .club-photos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
